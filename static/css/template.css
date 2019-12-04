@@ -2,8 +2,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.logo {
+#logo {
   background-color: #0D122B;
-  padding: 220px;
+  padding: 10px;
   color: white;
 }
