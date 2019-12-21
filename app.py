@@ -5,10 +5,12 @@ app = Flask(__name__)
 @app.route('/getmsg/', methods=['GET'])
 def respond():
     # Retrieve the name from url parameter
+    # http://127.0.0.1:5000/getmsg/?name=FooBaar --- for testing
     name = request.args.get("name", None)
 
     # For debugging
-    print("got name {name}")
+    print("got name {}".format(name))
+    #print(f"got name {name}" pyton 3
 
     response = {}
 
@@ -20,7 +22,8 @@ def respond():
         response["ERROR"] = "name can't be numeric."
     # Now the user entered a valid name
     else:
-        response["MESSAGE"] = "Welcome {name} to our awesome platform!!"
+        response["MESSAGE"] = "Welcome {} to our awesome platform!!".format(name)
+        #response["MESSAGE"] = "Welcome {name} to our awesome platform!!"
 
     # Return the response in json format
     return jsonify(response)
@@ -48,4 +51,4 @@ def index():
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
-    app.run(threaded=True, port=5000)
+    app.run(threaded=True, port=5000,debug=True)
