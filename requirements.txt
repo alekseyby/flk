@@ -25,7 +25,6 @@ requests==2.22.0
 selenium==3.141.0
 six==1.13.0
 twilio==6.34.0
-UNKNOWN==0.0.0
 urllib3==1.25.7
 wcwidth==0.1.7
 Werkzeug==0.16.0
