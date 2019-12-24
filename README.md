@@ -1,2 +1,8 @@
 # flk
-just another python project
+Technology
+HTML
+CSS
+Python
+Flask
+Heroku
+Git
