@@ -1,8 +1,10 @@
 # flk
-Technology
-HTML
-CSS
-Python
-Flask
-Heroku
-Git
+- Personal site
+# Technology
+- HTML
+- CSS
+- Python
+- Flask
+- Heroku cloud
+- Git
+
