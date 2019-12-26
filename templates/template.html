@@ -25,16 +25,16 @@ Aleksey Khromenkov
 
      <link rel="shortcut icon" href="/static/favicon.ico">
      <link rel="stylesheet" href="/static/css/redirect.css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--
 
      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
      <link rel="stylesheet" href="/static/css/reset.css">
      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-
+-->
 
    </head>
    <body>
@@ -53,42 +53,10 @@ Aleksey Khromenkov
          </div>
          <!-- <div class="row">
            <div class="col-md-12">
-
            </div>
          </div> -->
        </div>
-
      </div>
-
+            {% block content %}{% endblock %}
    </body>
  </html>
-
-
-<!--<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Flask Parent Template</title>
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}"/>
-
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1 id="logo">First Web App</h1>
-        <strong><nav>
-          <ul class="menu">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-          </ul>
-        </nav></strong>
-      </div>
-    </header>
-
-    {% block content %}
-    {% endblock %}
-
-  </body>
-</html>
--->
