@@ -11,9 +11,19 @@ def home():
 @app.route("/about")
 def about():
     return render_template("about.html")
+
 @app.route("/projects")
 def projects():
     return render_template("projects.html")
+
+@app.route("/experience")
+def experience():
+    return "In progress"
+
+@app.route("/designs")
+def designs():
+    return "In progress"
+
 @app.route("/baam")
 def salvador():
     return "Hello, FooBar"
