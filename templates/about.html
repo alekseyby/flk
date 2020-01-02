@@ -70,7 +70,7 @@
           </div>
 
           <div class="col-md-2">
-            <a class="btn btn-outline-primary disabled btn-lg" href="./templates/projects.html" role="button">Projects</a>
+            <a class="btn btn-outline-primary btn-lg" href="{{ url_for('projects') }}" role="button">Projects</a>
           </div>
 
           <div class="col-md-2">
@@ -123,17 +123,7 @@
     Footer Section
   -->
   <footer class="footer">
-    <p> Made by Aleksey Khromenkov </p>
-    <ul>
-      <a  href="https://github.com/alekseyby"><li>GitHub</li></a>
-      <li> | </li>
-      <a  href="https://www.linkedin.com/in/aliaksei-khramiankou/"><li>LinkedIn</li></a>
-      <li> | </li>
-      <a  href="{{ url_for('about') }}"><li>personal website version 2</li></a>
-      <li> | </li>
-      <a  href="{{ url_for('home') }}"><li>personal website version 1</li></a>
-
-    </ul>
+{% include "partials/bottom_navigation.html" %}
   </footer>
 
   </body>
