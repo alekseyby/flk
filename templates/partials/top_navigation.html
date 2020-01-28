@@ -1,6 +1,10 @@
   <head>
     <meta charset="utf-8">
-    <title>Aleksey Khromenkov</title>
+        {% if title %}
+        <title>Aleksey Khromenkov - {{ title }}</title>
+        {% else %}
+        <title>Aleksey Khromenkov</title>
+        {% endif %}
 
     <link rel="icon" href= "./static/images/salvador logo/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./static/css/reset.css">
