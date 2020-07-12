@@ -18,11 +18,11 @@ def projects():
 
 @app.route("/experience")
 def experience():
-    return "In progress"
+    return  render_template("experience.html", title='Experience')
 
 @app.route("/designs")
 def designs():
-    return "In progress"
+    return  render_template("designs.html", title='Designs')
 
 @app.route("/baam")
 def salvador():
