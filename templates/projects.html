@@ -1,14 +1,129 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <!-- *************************************
       Navigation Section
     -->
 {% include "partials/top_navigation.html" %}
-<body>
-<main>
+  <body>
+  <main>
+    <!-- *************************************
+      Jumbotron Section
+    -->
+         <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+               <h1>Aleksey Khromenkov</h1>
+               <p>My Projects</p>
+            </div>
+         </div>
+         <!-- *************************************
+            Recent Projects Section
+            -->
+         <div class="section">
+         <div class="container">
+         <h2>My Projects</h2>
+         <!-- ********************************** -->
+         <!-- Personal Website Version 2 -->
+         <div class="row recent-proj">
+         <div class="col-md-6">
+            <div class="project-description">
+               <p class="project-title"><em>Personal Website Version 2</em></p>
+               <p>Nov 2019 - Present </p>
+               <p>Current site created with Flask Framework
+               </p>
+               <ul>
+                  <li><a  href="https://github.com/alekseyby/flk">GitHub Repository</a></li>
+                  <li> | </li>
+                  <li><a  href="{{ url_for('about') }}">Site</a></li>
+               </ul>
+               <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git</p>
+            </div>
+         </div>
+
+            <div class="col-md-6 pics">
+              <img src="../static/images/projects/flask_project_logo.PNG">
+            </div>
+            </div>
+
+         <!-- ********************************** -->
+         <!-- Personal Website Version 1 -->
+         <div class="row recent-proj">
+         <div class="col-md-6">
+            <div class="project-description">
+               <p class="project-title"><em>Personal Website Version 1</em></p>
+               <p> Sep 2019 - Nov 2019 </p>
+               <p>My first attempt to make a website with Flask. Then I realized that I can do more complicated site, and created version 2 :)</p>
+               <ul>
+                  <li><a  href="https://github.com/alekseyby/flk/blob/master/templates/template.html">GitHub Repository</a></li>
+                  <li> | </li>
+                  <li><a  href="{{ url_for('home') }}" >Site</a></li>
+               </ul>
+               <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git, Flask, Heroku Cloud</p>
+            </div>
+         </div>
+
+            <div class="col-md-6 pics">
+              <img src="{{url_for('static', filename='images/projects/site_v1_project.PNG')}}" />
+              <!--<img src="../static/images/projects/site_v1_project.PNG"> -->
+            </div>
+            </div>
+
+         <!-- ********************************** -->
+         <!-- Microblog -->
+         <div class="row recent-proj">
+            <div class="col-md-6">
+               <div class="project-description">
+                  <p class="project-title"><em>Microblog</em></p>
+                  <p> Dec 2019 - Present </p>
+                  <p>After a first look at the Flask, I decided to learn more about framework and started creating a microblog using “Flask Mega-Tutorial” by Miguel Grinberg</p>
+                  <ul>
+                     <li><a  href="https://github.com/alekseyby/microbolog">GitHub Repository</a></li>
+                     <li> | </li>
+                     <li><a  href=#>Site</a></li>
+                  </ul>
+                  <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git, Flask</p>
+               </div>
+            </div>
+
+               <div class="col-md-6 pics">
+                 <img src="../static/images/projects/recent/web_ver_1.PNG">
+               </div>
+               </div>
+
+            <!-- Banana -->
+            <div class="row recent-proj">
+               <div class="col-md-6">
+                  <div class="project-description">
+                     <p class="project-title"><em>Page Object Pattern/Pytest/Selenium/SMS via Twillio API</em></p>
+                     <p> Sept 2019 - Present </p>
+                     <p>Experiments with WEB, API, UI automation</p>
+                     <ul>
+                        <li><a  href="https://github.com/alekseyby/banana">GitHub Repository</a></li>
+                        <li> | </li>
+                        <li><a  href=#>Site</a></li>
+                     </ul>
+                     <p><strong>Technologies Used:</strong>Selenium, Python, Twillio API</p>
+                  </div>
+               </div>
+
+                  <div class="col-md-6 pics">
+                    <img src="../static/images/projects/recent/web_ver_1.PNG">
+                  </div>
+                  </div>
+
+            </div>
+         </div>
+         <!--
+            <hr>
+            -->
 </main>
-<footer class="footer">
+
+  <!-- *************************************
+    Footer Section
+  -->
+  <footer class="footer">
 {% include "partials/bottom_navigation.html" %}
-</footer>
-</body>
+  </footer>
+
+  </body>
 </html>
