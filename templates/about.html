@@ -25,6 +25,7 @@
       About Me Section
     -->
     <div class="about-me" id="aboutme">
+      <div class="section">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -35,12 +36,14 @@
           <div class="col-md-8">
             <div class="about-text">
               <h2>About Me</h2>
+              <div class="section">
               <p>Hello, my name is Aleksey Khromenkov. A lot of people call me Alex so feel free to call me that. I work as Automation QA Engineer in <a href ="https://touchsoft.by/en/"><span style="color: #003a8b">Touch</span><span style="color: #f68f22">Soft</span></a> company and I love it.</p>
               <p>I was born and raised up in<a href="https://www.visit-belarus.com/en/visit-minsk/"> Minsk, Belarus</a> and I live here nowadays.</p>
               <p>I like to fill up my life with learning new things,traveling, teaching, and Computer Science.</p>
               <p>I created this site to get some experience with Flask framework for Python and now this place exists as a way to show the things I am working on. As I am always learning new things, this site is always going to be a work in progress.</p>
               <p>Now that you know a little about me. Take a peek around! If you want to go on my LinkedIn or resume click on the buttons below.</p>
               <p>Thank you for visiting!</p>
+              </div>
             </div>
           </div>
 
@@ -65,16 +68,16 @@
         </div>
 
         <div class="row pics">
-          <div class="col-md-2">
+          <div class="col-md-4">
             <a class="btn btn-outline-primary btn-lg" href="./static/documents/resume/Khramiankou Aliaksei - AutomationQA.pdf" role="button">Resume</a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-md-4">
             <a class="btn btn-outline-primary btn-lg" href="{{ url_for('projects') }}" role="button">Projects</a>
           </div>
 
-          <div class="col-md-2">
-            <a class="btn btn-outline-primary disabled btn-lg" href="./templates/experiences.html" role="button">Experiences</a>
+          <div class="col-md-4">
+            <a class="btn btn-outline-primary btn-lg" href="{{ url_for('experience') }}" role="button">Experiences</a>
           </div>
         </div>
 
@@ -109,14 +112,11 @@
           <div class="col-md-2">
             <a class="btn btn-outline-primary fa fa-linkedin btn-lg" href="https://www.linkedin.com/in/aliaksei-khramiankou/" role="button" target="_blank"> LinkedIn</a>
           </div>
-          <div class="col-md-6">
-            <p>Flask Powered<img src="./static/images/flask logo/transparent/flask_logo_cropped.png" alt="Logo" style="width:80px;"></p>
-          </div>
         </div>
 
       </div> <!-- End Contact Container -->
     </div> <!-- End Contact Section -->
-
+    </div>
 </main>
 
   <!-- *************************************
