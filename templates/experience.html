@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <!-- *************************************
-      Navigation Section
-    -->
-{% include "partials/top_navigation.html" %}
-  <body>
- <main>
    <!-- *************************************
-      Jumbotron Section
+      Navigation Section
       -->
-   <div class="jumbotron jumbotron-fluid">
-      <div class="container-fluid">
-         <h1>Aleksey Khromenkov</h1>
-         <p>My Experience</p>
-      </div>
-   </div>
-   <div class="my_experience" id="myexperience">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-4">
-               <h2>In Progress</h2>
+   {% include "partials/top_navigation.html" %}
+   <body>
+      <main>
+         <!-- *************************************
+            Jumbotron Section
+            -->
+         <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+               <h1>Aleksey Khromenkov</h1>
+               <p>My Experience</p>
             </div>
-            <div class="col-md-8">
-               <div class="about-text">
+         </div>
+         <!-- *************************************
+            Recent Experience Section
+             -->
+         <div class="section">
+            <div class="container">
+               <h2>My Experience:</h2>
+               <!-- Current experience-->
+               <div class="row recent-proj">
+                  <div class="col-md-6">
+                     <div class="project-description">
+                        <p class="project-title"><em>Nuance Cummunications</em></p>
+                        <p>Test Automation Engineer - Contractor</p>
+                        <p>Nov 2018 - Present </p>
+                        <br>- Designing and supporting tests with Robot Framework (Python)
+                        <br>- Improving tests stability
+                        <br>- Running automated test scripts and reviewing results with Jenkins
+                        <br>- Reviewing and analyzing system logs
+                        <br>- Code review
+                        <br>- Training for teammates to automate tests with Robot Framework
+                        <br>- Writing unit tests for Ember.js application
+                        <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 pics">
+                     <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHVP_rf4g5NJA/company-logo_100_100/0?e=1602720000&amp;v=beta&amp;t=1O--2w5Ib8NpZTNQa5y6jio7kkupSrjI0g8xwTz9lF0" loading="lazy" alt="Nuance Communications">
+                  </div>
+               </div>
+               <div class="row recent-proj">
+                  <div class="col-md-6">
+                     <div class="project-description">
+                        <p class="project-title"><em>TouchSoft</em></p>
+                        <p>Quality Assurance Engineer</p>
+                        <p>May 2017 - Now 2018 </p>
+                        <br>- Regression testing
+                        <br>- New features testing
+                        <br>- Reporting defects for development teams, working with bug tracking system and specifying severity and priority
+                        <br>- Documentation analysis and creating new test cases
+                        <br>- Creating and updating test documentation (requirements, test cases, test suites)
+                        <br>- Reviewing test cases and test suites
+                        <br>- Accessibility testing (Mobile, PC)
+                        <br>- Communication with local and remote developers, managers and teammates.
+                        <br>- Working with cross-functional teams to ensure quality throughout the software development lifecycle
+                        <br>- Running automated test scripts and reviewing results with Jenkins
+                        <br>- Reviewing and analyzing system logs, and providing results
+                        <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 pics">
+                     <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQEm-BSmdlYBsw/company-logo_100_100/0?e=1602720000&v=beta&t=lzsdD_Jybi1T974X4GgsTWD3JaDLmzV8VZpdFbDxX7Y" loading="lazy" alt="Nuance Communications">
+                  </div>
                </div>
             </div>
          </div>
-      </div>
-   </div>
-</main>
-
-  <!-- *************************************
-    Footer Section
-  -->
-  <footer class="footer">
-{% include "partials/bottom_navigation.html" %}
-  </footer>
-
-  </body>
+      </main>
+      <!-- *************************************
+         Footer Section
+         -->
+      <footer class="footer">
+         {% include "partials/bottom_navigation.html" %}
+      </footer>
+   </body>
 </html>
