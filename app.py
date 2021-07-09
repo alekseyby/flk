@@ -1,7 +1,9 @@
 # app.py
 # This is testing file. This is testing file. Not connected with project.
 from flask import Flask, request, jsonify
+
 app = Flask(__name__)
+
 
 @app.route('/getmsg/', methods=['GET'])
 def respond():
@@ -11,7 +13,7 @@ def respond():
 
     # For debugging
     print("got name {}".format(name))
-    #print(f"got name {name}" pyton 3
+    # print(f"got name {name}" pyton 3
 
     response = {}
 
@@ -24,10 +26,11 @@ def respond():
     # Now the user entered a valid name
     else:
         response["MESSAGE"] = "Welcome {} to our awesome platform!!".format(name)
-        #response["MESSAGE"] = "Welcome {name} to our awesome platform!!"
+        # response["MESSAGE"] = "Welcome {name} to our awesome platform!!"
 
     # Return the response in json format
     return jsonify(response)
+
 
 @app.route('/post/', methods=['POST'])
 def post_something():
@@ -38,18 +41,20 @@ def post_something():
         return jsonify({
             "Message": "Welcome {name} to our awesome platform!!",
             # Add this option to distinct the POST request
-            "METHOD" : "POST"
+            "METHOD": "POST"
         })
     else:
         return jsonify({
             "ERROR": "no name found, please send a name."
         })
 
+
 # A welcome message to test our server
 @app.route('/')
 def index():
     return "<h1>Welcome to our server !!</h1>"
 
+
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
-    app.run(threaded=True, port=5000,debug=True)
+    app.run(threaded=True, port=5000, debug=True)

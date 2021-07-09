@@ -21,7 +21,7 @@
             -->
          <div class="section">
          <div class="container">
-         <h2>My Projects</h2>
+         <h2>My Projects:</h2>
          <!-- ********************************** -->
          <!-- Personal Website Version 2 -->
          <div class="row recent-proj">
@@ -41,7 +41,7 @@
          </div>
 
             <div class="col-md-6 pics">
-              <img src="../static/images/projects/flask_project_logo.PNG">
+              <img src="../static/images/projects/flask_project_logo.png">
             </div>
             </div>
 
@@ -63,7 +63,7 @@
          </div>
 
             <div class="col-md-6 pics">
-              <img src="{{url_for('static', filename='images/projects/site_v1_project.PNG')}}" />
+              <img src="{{url_for('static', filename='images/projects/site_v1_project.png')}}" />
               <!--<img src="../static/images/projects/site_v1_project.PNG"> -->
             </div>
             </div>
@@ -78,15 +78,13 @@
                   <p>After a first look at the Flask, I decided to learn more about framework and started creating a microblog using “Flask Mega-Tutorial” by Miguel Grinberg</p>
                   <ul>
                      <li><a  href="https://github.com/alekseyby/microbolog">GitHub Repository</a></li>
-                     <li> | </li>
-                     <li><a  href=#>Site</a></li>
                   </ul>
-                  <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git, Flask</p>
+                  <p><strong>Technologies Used:</strong> HTML, CSS, Bootstrap, Git, Flask, PyTest</p>
                </div>
             </div>
 
                <div class="col-md-6 pics">
-                 <img src="../static/images/projects/recent/web_ver_1.PNG">
+                 <img src="{{url_for('static', filename='images/projects/microblog_project_logo.png')}}">
                </div>
                </div>
 
@@ -95,19 +93,40 @@
                <div class="col-md-6">
                   <div class="project-description">
                      <p class="project-title"><em>Page Object Pattern/Pytest/Selenium/SMS via Twillio API</em></p>
-                     <p> Sept 2019 - Present </p>
+                     <p> Sept 2019 - Oct 2019 </p>
                      <p>Experiments with WEB, API, UI automation</p>
                      <ul>
                         <li><a  href="https://github.com/alekseyby/banana">GitHub Repository</a></li>
-                        <li> | </li>
-                        <li><a  href=#>Site</a></li>
                      </ul>
-                     <p><strong>Technologies Used:</strong>Selenium, Python, Twillio API</p>
+                     <p><strong>Technologies Used:</strong> Selenium, Python, Twillio API</p>
+                  </div>
+               </div>
+
+                  <div class="col-md-3 pics">
+                      <img src="{{url_for('static', filename='images/projects/pom_logo.png')}}">
+                  </div>
+                  <div class="col-md-3 pics">
+                      <img src="{{url_for('static', filename='images/projects/twillio_sms.png')}}">
+                  </div>
+                  </div>
+
+                         <!-- Socket Chat -->
+            <div class="row recent-proj">
+               <div class="col-md-6">
+                  <div class="project-description">
+                     <p class="project-title"><em>Simple console chat on sockets</em></p>
+                     <p> Sept 2020 </p>
+                     <p>In collaboration with a colleague, we wrote a simple console chat that receives and sends
+                         messages in real-time. The goal of the project is to understand how web sockets work</p>
+                     <ul>
+                        <li><a  href="https://github.com/alekseyby/console_chat">GitHub Repository</a></li>
+                     </ul>
+                     <p><strong>Technologies Used:</strong> Python: socket, sys, threading</p>
                   </div>
                </div>
 
                   <div class="col-md-6 pics">
-                    <img src="../static/images/projects/recent/web_ver_1.PNG">
+                      <img src="{{url_for('static', filename='images/projects/socket_chat.png')}}">
                   </div>
                   </div>
 

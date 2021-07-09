@@ -50,7 +50,7 @@ h2 {
 /* ------------------------------------
    About Me
 */
-.about-me .container .col-md-4 {
+.about-picture {
   background-size: cover;
   background-image: url("../images/about_pic.jpg");
   background-position:center;
